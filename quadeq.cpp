@@ -82,6 +82,14 @@ Eq_3type::Eq_3type(long double a, long double b, long double c): QuadraticEq(a, 
 
 std::string Eq_3type::eq_string()
 {
+    if(std::isnan(x1))
+    {
+        return "Корней на действительной прямой нет";
+    }
+    else if (std::isnan(x2))
+    {
+        return "Единственный корень: " + std::to_string(x1);
+    }
     return "x1: " + std::to_string(x1) + " x2: " + std::to_string(x2);
 }
 

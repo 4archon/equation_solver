@@ -45,8 +45,8 @@ void file_rw::write(long double x1, long double x2, Analyser an)
     }
     else
     {
-        x_1 = -100;
-        x_2 = 100;
+        x_1 = -20;
+        x_2 = 20;
     }
 
     std::ofstream file(".plot.txt");
